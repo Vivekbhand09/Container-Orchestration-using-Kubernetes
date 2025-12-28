@@ -1,5 +1,27 @@
 # ☸️ Container Orchestration Using Kubernetes
 
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![Spring Cloud](https://img.shields.io/badge/Spring%20Cloud-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![Spring Cloud Stream](https://img.shields.io/badge/Spring%20Cloud%20Stream-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![Spring Cloud Function](https://img.shields.io/badge/Spring%20Cloud%20Function-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![Spring Security](https://img.shields.io/badge/Spring%20Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white)
+![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)
+![Apache Kafka](https://img.shields.io/badge/Apache%20Kafka-000000?style=for-the-badge&logo=apachekafka&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Helm](https://img.shields.io/badge/Helm-0F1689?style=for-the-badge&logo=helm&logoColor=white)
+![Keycloak](https://img.shields.io/badge/Keycloak-262626?style=for-the-badge&logo=keycloak&logoColor=white)
+![OAuth2](https://img.shields.io/badge/OAuth2-4285F4?style=for-the-badge&logo=oauth&logoColor=white)
+![OpenID Connect](https://img.shields.io/badge/OpenID%20Connect-000000?style=for-the-badge&logo=openid&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)
+![YAML](https://img.shields.io/badge/YAML-CB171E?style=for-the-badge&logo=yaml&logoColor=white)
+![Microservices](https://img.shields.io/badge/Microservices-0A66C2?style=for-the-badge)
+![Event--Driven Architecture](https://img.shields.io/badge/Event--Driven%20Architecture-5A29E4?style=for-the-badge)
+![REST APIs](https://img.shields.io/badge/REST%20APIs-02569B?style=for-the-badge)
+
+
 In this section, we deploy **all EazyBank microservices** into a **local Kubernetes cluster** to manage, scale, and operate containerized applications in a **production-like environment**.
 
 Kubernetes helps us move from *running containers manually* to *running microservices reliably at scale*.
@@ -88,13 +110,7 @@ Kubernetes provides a **declarative, self-healing, and scalable platform** where
 - Declarative configuration (YAML)
 - Cloud-agnostic architecture
 
----
 
-## 🏗️ Kubernetes Architecture
-
-The following diagram shows the high-level Kubernetes architecture:
-
-![Kubernetes Architecture](utils/architecture.png)
 
 ---
 
@@ -667,5 +683,53 @@ Each screenshot validates a specific part of the Kubernetes setup and confirms t
 
 ---
 
+## 📘 Kubernetes Learning Summary
+
+### 🔹 Fundamentals
+- Kubernetes = container orchestration platform
+- Manages apps using **desired state**
+- Control Plane vs Worker Nodes
+
+### 🔹 Cluster Setup
+- Local cluster via Docker Desktop
+- Managed contexts & nodes with `kubectl`
+- Verified cluster & node health
+
+### 🔹 Core Components
+- kube-apiserver, etcd, scheduler, controller manager, kubelet, kube-proxy
+- Control plane manages workloads
+
+### 🔹 Pods & Deployments
+- Created Deployments for pod lifecycle
+- Pods auto-recover, scale, and maintain replicas
+
+### 🔹 Services & Networking
+- Services provide stable IP/DNS
+- Traffic: `Client → Service → Pod`
+- Worked with ClusterIP, NodePort, LoadBalancer
+
+### 🔹 Config & Service Discovery
+- Used ConfigMaps to externalize configs
+- Deployed Eureka Server for dynamic service discovery
+
+### 🔹 Security
+- Integrated Keycloak for OAuth2 authentication
+- Secured APIs, tested with Postman
+
+### 🔹 Dashboard
+- Installed K8s Dashboard via Helm
+- Monitored Pods, Deployments, Services, ConfigMaps, ReplicaSets
+
+### 🔹 Self-Healing & Scaling
+- Auto-restart crashed pods, maintain replicas
+- Horizontal scaling with replicas & HPA
+
+### 🔹 Rollouts & Rollbacks
+- Performed rolling updates, tracked revisions
+- Rolled back safely to previous versions
+
+### 🔹 DevOps Readiness
+- Hands-on with YAML, declarative deployments, IaC mindset
+- Confident in deploying microservices at scale
 
 
